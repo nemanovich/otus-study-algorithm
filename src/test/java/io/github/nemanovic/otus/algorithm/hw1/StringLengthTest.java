@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StringLengthTest {
-    private static final String ROOT = "/String/";
+    private static final String ROOT = "/hw1/String/";
 
     private static Stream<Object[]> fileProvider() {
         return IntStream.rangeClosed(0, 3).mapToObj(i -> ROOT + "test." + i)
