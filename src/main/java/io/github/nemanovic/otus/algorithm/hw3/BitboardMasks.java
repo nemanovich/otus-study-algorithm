@@ -23,7 +23,6 @@ public class BitboardMasks {
     public static final long EXCLUDE_H = EXCLUDE_COLUMNS[7];
 
     public static long getExcludeColumn(int i) {
-        assert i >= 0 && i < 8;
         return EXCLUDE_COLUMNS[i];
     }
 }
