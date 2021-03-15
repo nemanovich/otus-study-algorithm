@@ -41,7 +41,6 @@ public class FibonacciTest {
 
     // O(2^n) без мемоизации
     private BigInteger findFiboViaRecurrent(int n) {
-        assert n >= 0;
         if (n <= 1) {
             return BigInteger.valueOf(n);
         }
@@ -51,7 +50,6 @@ public class FibonacciTest {
     // по формуле Бине
     // O(log(n)) операций без учета длинной арифматики. при N > 10000 накапливается погрешность.
     private BigInteger findFiboViaGoldenRatio(int n) {
-        assert n >= 0;
         if (n <= 1) {
             return BigInteger.valueOf(n);
         }
@@ -68,7 +66,6 @@ public class FibonacciTest {
     // Матрица перехода q находится из уравнения ((f2, f1), (f1, f0)) * X = ((f3, f2), (f2, f1))
     // O(log(n)) операций без учета длинной арифматики.
     private BigInteger findFiboViaMatrixMultiplication(int n) {
-        assert n >= 0;
         if (n <= 1) {
             return BigInteger.valueOf(n);
         }
